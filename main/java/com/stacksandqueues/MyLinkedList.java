@@ -28,7 +28,7 @@ public class MyLinkedList<K extends Comparable<K>> {
 		while (tempNode.getNext() != null) {
 			myNodes.append(tempNode.getKey());
 			if (!tempNode.equals(tail))
-				myNodes.append("->");
+				myNodes.append(" -> ");
 			tempNode = tempNode.getNext();
 		}
 		myNodes.append(tempNode.getKey());
